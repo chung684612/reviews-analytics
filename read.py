@@ -16,5 +16,5 @@ print('留言的平均長度為: %5.2f' % average)
 new = []
 for leng in data:
 	if len(leng) < 100:
-		new += leng
+		new.append(leng)
 print('留言小於100筆的一共為: %d ' % len(new))
