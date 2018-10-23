@@ -18,3 +18,9 @@ for leng in data:
 	if len(leng) < 100:
 		new.append(leng)
 print('留言小於100筆的一共為: %d ' % len(new))
+
+content_good = []
+for leng in data:
+	if 'good' in leng:
+		content_good.append(leng)
+print('篩選內容裡有"good"之內容, 有 %d 筆資料' % len(content_good))
