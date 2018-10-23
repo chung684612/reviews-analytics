@@ -24,3 +24,6 @@ for leng in data:
 	if 'good' in leng:
 		content_good.append(leng)
 print('篩選內容裡有"good"之內容, 有 %d 筆資料' % len(content_good))
+
+bad = ['bad' in leng for leng in data if 'good' in leng]
+print(bad[0])
